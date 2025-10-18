@@ -15,29 +15,6 @@ SmartMap AI Travel Assistant is a web application that helps users find nearby p
 
 ---
 
-## 💾 Download Ollama Models
-
-> ⚠️ Important: Ollama model files are **not included in the repository** because of size. You must download them manually.
-      Be sure to use llama3:latest 
-
-1. Enter the Ollama container:
-
-```bash
-docker exec -it ollama bash
-
-```
-2. Pull the desired model (example: LLaMA 3):
-
-```bash
-ollama pull llama3
-
-```
-
-3. Exit the container. The model is now stored in the folder mapped to your host:
-```bash
-./ollama -> /root/.ollama
-
-```
 
 
 🛠 Requirements
@@ -169,6 +146,32 @@ Check running containers:
 docker ps
 ```
 You should see ollama, openwebui, redis, map-backend, and map-frontend running.
+<hr/>
+
+
+## 💾 Download Ollama Models
+
+> ⚠️ Important: Ollama model files are **not included in the repository** because of size. You must download them manually.
+      Be sure to use llama3:latest 
+
+1. Enter the Ollama container:
+
+```bash
+docker exec -it ollama bash
+
+```
+2. Pull the desired model (example: LLaMA 3):
+
+```bash
+ollama pull llama3
+
+```
+
+3. Exit the container. The model is now stored in the folder mapped to your host:
+```bash
+./ollama -> /root/.ollama
+
+```
 <hr/>
 
 🔎 Usage
