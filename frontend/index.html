@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌍 AI Map Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet CSS -->
+   <!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  defer
+></script>
+
+<!-- Script JS kamu -->
+<script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌍 SmartMap AI Travel Assistant</h1>
+        <p>Find the best places around you with smart recommendations...</p>
+      </header>
+
+      <section class="search-section">
+        <input
+          id="query"
+          type="text"
+          placeholder="Example: restaurants in Bandung.."
+        />
+        <button id="searchBtn">🔍 Cari</button>
+      </section>
+
+      <section id="map"></section>
+
+      <section id="results"></section>
+    </div>
+  </body>
+</html>
